@@ -32,9 +32,7 @@ int bfs() {
         while(que.size()) {            
             int x = que.front().first;
             int y = que.front().second;
-            
-//            que.pop_front();
-            
+                        
             if ((int)cmap[x][y] == 49 + ci) {
                 goal[ci] = d[x][y];
                 sx = x;
@@ -70,7 +68,7 @@ int main() {
         }
     }
     goalSum = bfs();
-    cout << goalSum;
+    cout << goalSum << endl;
     return 0;
 }
 
