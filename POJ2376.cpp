@@ -8,7 +8,7 @@ int n;
 int t;
 pair<int, int> invl[25000]; 
 
-void slove() {
+void solve() {
     sort(invl, invl + n);
     int res = 0;
     int cur = 0;
@@ -46,7 +46,7 @@ int main() {
         printf("-1");
     } 
     else {
-        slove();
+        solve();
     }
     return 0;    
 }
