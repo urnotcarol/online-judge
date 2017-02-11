@@ -11,7 +11,7 @@ ll c[10005];
 ll y[10005];
 
 void solve() {
-    ll res = 0;
+    ll res = 0; 
     
     for (int i = 1; i < n; i++) {
         c[i] = min(c[i], c[i - 1] + s);

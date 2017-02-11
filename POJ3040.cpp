@@ -6,7 +6,7 @@
 using namespace std;
 
 int n;
-int m = 0; //需要进行贪心的n 
+int m = 0; //需要进行贪心的硬币 
 int c;
 pair<int, int> coin[20];
 
