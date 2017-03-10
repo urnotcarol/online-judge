@@ -15,21 +15,6 @@ int B;
 int c[MAX_T + 3];
 int dp[2][MAX_A + 3];
 
-int solve(int m) {
-    dp[0][0] = 1;
-    for (int i = 1; i <= T; i++) {
-        int cur = i & 0x1;
-        int pre = (i - 1) & 0x1;
-        memset(dp[cur], 0, sizeof(dp[cur]));
-        for (int j = m; j >= 0; j--) {
-            for (int k = 0; k <= min(c[i], j); k++) {
-                dp[cur][j] += dp[pre][j - k];
-            }
-        }
-    }
-    return dp[T & 0x1][m] % MOD;   
-}
-
 int main() {
     scanf("%d %d %d %d", &T, &A, &S, &B);
     int ant;
