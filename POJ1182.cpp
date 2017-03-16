@@ -85,7 +85,7 @@ int main() {
             else {
                 unite(X, Y + N);
                 unite(X + N, Y + 2 * N);
-                unite(X + 2 * N, Y);
+                unite(X + 2 * N, Y); 
             }
         }
     }
