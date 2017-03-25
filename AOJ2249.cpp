@@ -4,7 +4,7 @@
 #include <queue>
 #include <vector>
 #include <memory.h>
-#define ONLINE_JUDGE
+#define ONLINE_JUDGE 
 using namespace std;
 
 const int INF = 0x3f3f3f3f;
@@ -22,7 +22,7 @@ int d[MAX_N];
 int N;
 int M;
 
-void dijkrast(int s) {
+void dijkstra(int s) {
     priority_queue<P, vector<P>, greater<P> > que;
     fill(d, d + MAX_N, INF);
     d[s] = 0;
@@ -58,7 +58,7 @@ int main() {
             G[u].push_back(Edge(v, cost, distance));
             G[v].push_back(Edge(u, cost, distance));
         }
-        dijkrast(1);
+        dijkstra(1);
         int res = 0;
         for (int i = 2; i <= N; i++) {
             int minCost = INF;
