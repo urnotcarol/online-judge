@@ -16,7 +16,7 @@ int main() {
             s[i + i + 2] = s[i];
             s[i + i + 1] = '#';
         }
-        s[0] = '$';
+        s[0] = '$';         
         int id = 0;
         int maxLen = 0;
         for (int i = 2; i < 2 * len + 1; i++) {
